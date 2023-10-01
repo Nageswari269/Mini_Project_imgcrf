@@ -1,7 +1,7 @@
 import React from "react";
 
 let Card = () => {
-  return <div></div>;
+  return <div>card</div>;
 };
 
 export default Card;

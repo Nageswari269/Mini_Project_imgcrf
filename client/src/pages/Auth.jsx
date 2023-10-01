@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { auth } from "../assets";
 
 let Auth = () => {
   return (
-    <div className="w-[100vw] h-[100vh] sm:flex">
+    <div className="w-full h-[90vh] sm:flex mt-2 shadow-xl bg-slate-100 ">
       <div className=" hidden  sm:w-[60%] sm:flex sm:items-center sm:justify-center  bg-gradient-to-r from-[#dd3675] via-[#d8363a] to-[#dd3675] ">
         <div className="px-4 py-6 text-white md:mx-6 md:p-12">
           <h4 className="mb-6 text-xl sm:text-2xl font-semibold">
@@ -19,7 +19,7 @@ let Auth = () => {
         </div>
       </div>
       {/* ----------------- */}
-      <div className="h-[100vh] sm:w-[40%] flex items-center justify-center ">
+      <div className="h-[90vh] sm:w-[40%] flex items-center justify-center ">
         <div>
           <img className="mx-auto w-48 mb-12" src={auth} alt="logo" />
           <h1 className="text-center text-xl font-bold">LOG IN</h1>
@@ -29,7 +29,7 @@ let Auth = () => {
               <input
                 required
                 type="email"
-                className="w-full outline-none border-b-black border-2 border-t-transparent border-l-transparent border-r-transparent "
+                className="w-full outline-none border-b-black border-2 border-t-transparent border-l-transparent border-r-transparent bg-slate-100  "
               />
             </div>
             <div className="mt-6">
@@ -37,7 +37,7 @@ let Auth = () => {
               <input
                 required
                 type="password"
-                className="w-full outline-none border-b-black border-2 border-t-transparent border-l-transparent border-r-transparent"
+                className="w-full outline-none border-b-black border-2 border-t-transparent border-l-transparent border-r-transparent bg-slate-100  "
               />
             </div>
 
